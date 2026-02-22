@@ -1,0 +1,43 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "taxinyc_inflow",
+    "dataset_type": "st_raster",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "past_steps": 24,
+    "future_steps": 24,
+    "stride": 1,
+    "few_shot_ratio": 1.0,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "long_forecasting",
+    "batch_size": 64,
+    "epochs": 100,
+    "metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+
+    
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "STResNet",
+    "input_dim": 24,
+    "in_channel_dim": 3,
+    "out_channel_dim": 1,
+    "width": 20,
+    "height": 10,
+    "nb_residual_unit": 12,
+    "batch_norm": false,
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-4,
+    "clip_grad_value": 5.0,
+
+    "scheduler_name": "None",
+
+    "criterion_name": "masked_mae"
+
+}

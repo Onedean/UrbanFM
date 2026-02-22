@@ -1,0 +1,26 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "metrla_speed",
+    "dataset_type": "st_graph",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "block_imputation",
+    "p_fault": 0.0015,
+    "p_noise": 0.05,
+    "in_sample": false,
+    
+
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "svd",
+    "rank": 10,
+    "adj_type": "doubletransition"
+
+}
+

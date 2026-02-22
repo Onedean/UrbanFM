@@ -1,0 +1,48 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "pems04_flow",
+    "dataset_type": "st_graph",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "past_steps": 24,
+    "future_steps": 24,
+    "stride": 1,
+    "few_shot_ratio": 0.1,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "long_forecasting",
+    "batch_size": 32,
+    "epochs": 100,
+    "metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+
+
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "D2STGNN",
+    "node_num": 307,
+    "input_dim": 24,
+    "adj_type": "doubletransition",
+    "num_feat": 1,
+    "num_hidden": 32,
+    "node_hidden": 12,
+    "time_emb_dim": 12,
+    "k_s": 2,
+    "k_t": 3,
+    "layer": 5,
+    "gap": 3,
+    "dropout": 0.1,
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-4,
+    "clip_grad_value": 5.0,
+
+    "scheduler_name": "None",
+
+    "criterion_name": "masked_mae"
+
+}

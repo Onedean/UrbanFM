@@ -1,0 +1,50 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "pretrain_data_path": "datasets/pretrain_datasets",
+    "downstream_forecasting_data_path" : "datasets/eval_datasets",
+    "downstream_imputation_data_path" : "datasets/eval_datasets",
+    "spatial_window": 16,
+    "pretrain_temporal_window": 24,
+    "pretrain_stride": 12,
+    "downstream_forecasting_temporal_window": [24, 48],
+    "downstream_imputation_type": ["point_imputation", "block_imputation"],
+    "scaling_ratio": 1.0,
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "downstream_forecasting_stride": 1,
+    "few_shot_ratio": 0.1,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "urbanfm_downstream",
+    "batch_size": 1024,
+    "epochs": 10,
+    "forecasting_metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+    "imputation_metric_name": ["masked_mae", "masked_rmse", "masked_mre"],
+
+    
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "foundation",
+    "model_name": "STFormer",
+    "mask_ratio": 0.5,
+    "d_model_spatial": 64,
+    "n_heads_spatial": 4,
+    "num_layers_spatial": 4,
+    "d_model_temporal": 64,
+    "n_heads_temporal": 4,
+    "num_layers_temporal": 4,
+    "dropout": 0.1,
+
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-4,
+    "clip_grad_value": 5.0,
+
+    "scheduler_name": "None",
+
+    "criterion_name": "masked_mae"
+
+}

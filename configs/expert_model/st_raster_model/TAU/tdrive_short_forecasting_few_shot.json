@@ -1,0 +1,47 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "tdrive_inflow",
+    "dataset_type": "st_raster",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "past_steps": 12,
+    "future_steps": 12,
+    "stride": 1,
+    "few_shot_ratio": 0.1,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "short_forecasting",
+    "batch_size": 128,
+    "epochs": 100,
+    "metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+
+    
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "TAU",
+    "input_dim": 12,
+    "in_channel_dim": 3,
+    "out_channel_dim": 1,
+    "width": 28,
+    "height": 32,
+    "hid_S": 16,
+    "hid_T": 256,
+    "N_S": 4,
+    "N_T": 4,
+    "mlp_ratio": 8.0,
+    "drop": 0.0,
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-4,
+    "clip_grad_value": 5.0,
+
+    "scheduler_name": "None",
+
+    "criterion_name": "masked_mae"
+
+}

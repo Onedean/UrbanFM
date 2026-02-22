@@ -1,0 +1,59 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "tdrive_inflow",
+    "dataset_type": "st_graph",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "past_steps": 12,
+    "future_steps": 12,
+    "stride": 1,
+    "few_shot_ratio": 1.0,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "short_forecasting",
+    "batch_size": 32,
+    "epochs": 100,
+    "metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+
+    
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "STAEformer",
+    "node_num":  896,
+    "in_channel_dim": 3,
+    "input_dim": 12,
+    "output_dim": 12,
+    "if_spatial": false,
+    "if_time_in_day": true,
+    "if_day_in_week": true,
+    "if_adaptive": true,
+    "time_of_day_size": 288,
+    "day_of_week_size": 7,
+    "spatial_dim": 0,
+    "temporal_dim_tod": 24,
+    "temporal_dim_dow": 24,
+    "adaptive_dim": 80,
+    "out_channel_dim": 24,
+    "if_use_mixed_proj": true,
+    "feed_forward_dim": 256,
+    "num_heads": 4,
+    "num_layers": 3,
+    "dropout": 0.1,
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-4,
+
+    "scheduler_name": "StepLR",
+    "step_size": 15,
+    "gamma": 0.1,
+    "clip_grad_value": "None",
+
+    "criterion_name": "masked_mae"
+
+}
+

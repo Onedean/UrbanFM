@@ -1,0 +1,56 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "taxinyc_inflow",
+    "dataset_type": "st_graph",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "past_steps": 24,
+    "future_steps": 24,
+    "stride": 1,
+    "few_shot_ratio": 0.1,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "long_forecasting",
+    "batch_size": 128,
+    "epochs": 100,
+    "metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+
+
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "PatchTST",
+    "node_num": 200,
+    "in_channel_dim": 3,
+    "input_dim": 24,
+    "output_dim": 24,
+    "e_layers": 3,
+    "n_heads": 16,
+    "d_model": 128,
+    "d_ff": 256,
+    "dropout": 0.2,
+    "fc_dropout": 0.2,
+    "head_dropout": 0.0,
+    "patch_len": 4,
+    "model_stride": 2,
+    "individual": false,
+    "padding_patch": "end",
+    "revin": true,
+    "affine": false,
+    "subtract_last": false,
+    "decomposition": false,
+    "kernel_size": 5,
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 5e-4,
+    "clip_grad_value": 5.0,
+
+    "scheduler_name": "None",
+
+    "criterion_name": "masked_mae"
+
+}

@@ -1,0 +1,49 @@
+{
+    "_Note 1_": "The following is the set up for the dataset",
+    
+    "dataset_path": "datasets/eval_datasets",
+    "dataset_name": "metrla_speed",
+    "dataset_type": "st_graph",
+    "train_val_test_ratio": [0.6, 0.2, 0.2],
+    "past_steps": 12,
+    "future_steps": 12,
+    "stride": 1,
+    "few_shot_ratio": 1.0,
+
+
+    "_Note 2_": "The following is the set up for the task",
+    
+    "task_name": "short_forecasting",
+    "batch_size": 128,
+    "epochs": 100,
+    "metric_name": ["masked_mae", "masked_rmse", "masked_mape"],
+
+    
+    "_Note 3_": "The following is the set up for the method",
+
+    "model_type": "expert",
+    "model_name": "GWNet",
+    "node_num": 207,
+    "in_channel_dim": 3,
+    "output_dim": 12,
+    "adj_type": "doubletransition",
+    "dropout": 0.3,
+    "residual_channels": 32,
+    "dilation_channels": 32,
+    "skip_channels": 256,
+    "end_channels": 512,
+    "kernel_size": 2,
+    "blocks": 4,
+    "layers": 2,
+
+    "optimizer_name": "Adam",
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-4,
+    "clip_grad_value": 5.0,
+
+    "scheduler_name": "None",
+
+    "criterion_name": "masked_mae"
+
+}
+
