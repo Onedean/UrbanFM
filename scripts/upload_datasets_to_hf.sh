@@ -19,15 +19,14 @@ fi
 echo "Uploading ${DATASETS_DIR} to hf://${REPO_ID} (repo-type: dataset) ..."
 echo "This may take several hours for ~10 GB of data."
 
-hf upload "${REPO_ID}" "${DATASETS_DIR}" \
+hf upload "${REPO_ID}" "${DATASETS_DIR}" . \
   --repo-type dataset \
   --exclude ".git/*" \
   --commit-message "Upload UrbanFM datasets"
 
 # Set dataset card README
-hf upload "${REPO_ID}" "${DATASETS_DIR}/DATASET_CARD.md" \
+hf upload "${REPO_ID}" "${DATASETS_DIR}/DATASET_CARD.md" "README.md" \
   --repo-type dataset \
-  --path-in-repo README.md \
   --commit-message "Add dataset card"
 
 echo "Done: https://huggingface.co/datasets/${REPO_ID}"
