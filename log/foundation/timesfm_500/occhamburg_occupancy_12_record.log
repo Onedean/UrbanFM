@@ -1,0 +1,5 @@
+2025-02-12 23:18:17,932 - logger name:./log/foundation/timesfm/occhamburg_occupancy_12_record.log
+2025-02-12 23:18:28,400 - ******************************
+2025-02-12 23:18:28,401 - Dataset: occhamburg_occupancy
+2025-02-12 23:18:28,401 - ******************************
+2025-02-13 00:12:39,806 - TimesFM - Short Forecasting		 MAE:& $6.84\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $11.27\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $89.72\textcolor{gray}{\text{\scriptsize±0.00}}$

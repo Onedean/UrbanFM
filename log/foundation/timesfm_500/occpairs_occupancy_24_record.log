@@ -1,0 +1,5 @@
+2025-02-12 23:18:18,000 - logger name:./log/foundation/timesfm/occpairs_occupancy_24_record.log
+2025-02-12 23:18:28,444 - ******************************
+2025-02-12 23:18:28,444 - Dataset: occpairs_occupancy
+2025-02-12 23:18:28,444 - ******************************
+2025-02-12 23:50:56,283 - TimesFM - Long Forecasting		 MAE:& $1.99\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $3.88\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $40.41\textcolor{gray}{\text{\scriptsize±0.00}}$

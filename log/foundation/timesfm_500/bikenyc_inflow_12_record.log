@@ -1,0 +1,5 @@
+2025-02-12 23:18:17,942 - logger name:./log/foundation/timesfm/bikenyc_inflow_12_record.log
+2025-02-12 23:18:28,367 - ******************************
+2025-02-12 23:18:28,367 - Dataset: bikenyc_inflow
+2025-02-12 23:18:28,367 - ******************************
+2025-02-13 00:22:22,084 - TimesFM - Short Forecasting		 MAE:& $3.98\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $7.37\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $65.52\textcolor{gray}{\text{\scriptsize±0.00}}$

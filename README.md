@@ -2,10 +2,15 @@
 
 > Implementation for paper: UrbanFM: Scaling Urban Spatio-Temporal Foundation Models
 
-
 ## Datasets
 
-Due to GitHub's file upload size limit, we will release all datasets (including the evaluation set) open-source via cloud storage or other appropriate means after notification.
+The full datasets (~10 GB) are hosted on Hugging Face. Download before running experiments:
+
+```bash
+bash scripts/download_datasets.sh
+```
+
+See [datasets/README.md](datasets/README.md) for details.
 
 ## Experiments
 For the default configuration, you can quickly experiment with the following scripts:
@@ -19,7 +24,3 @@ or use following command:
 ```
 python foundation_model_run.py
 ```
-
-## Note
-
-> Please note that this is a preview version. We will clean up and update it to a more user-friendly version after receiving it!

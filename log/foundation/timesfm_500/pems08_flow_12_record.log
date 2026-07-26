@@ -1,0 +1,5 @@
+2025-02-12 23:18:18,015 - logger name:./log/foundation/timesfm/pems08_flow_12_record.log
+2025-02-12 23:18:28,400 - ******************************
+2025-02-12 23:18:28,400 - Dataset: pems08_flow
+2025-02-12 23:18:28,400 - ******************************
+2025-02-13 00:05:24,252 - TimesFM - Short Forecasting		 MAE:& $27.43\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $40.11\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $17.45\textcolor{gray}{\text{\scriptsize±0.00}}$

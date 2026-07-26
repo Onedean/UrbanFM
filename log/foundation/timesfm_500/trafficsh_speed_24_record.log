@@ -1,0 +1,5 @@
+2025-02-12 23:18:17,947 - logger name:./log/foundation/timesfm/trafficsh_speed_24_record.log
+2025-02-12 23:18:28,303 - ******************************
+2025-02-12 23:18:28,304 - Dataset: trafficsh_speed
+2025-02-12 23:18:28,304 - ******************************
+2025-02-13 01:45:03,224 - TimesFM - Long Forecasting		 MAE:& $0.65\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $1.15\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $10.16\textcolor{gray}{\text{\scriptsize±0.00}}$

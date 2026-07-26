@@ -1,0 +1,4 @@
+# Dataset files are hosted on Hugging Face (see datasets/README.md)
+datasets/eval_datasets/
+datasets/full_pretrain_datasets/
+datasets/pretrain_datasets/

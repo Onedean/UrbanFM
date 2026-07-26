@@ -1,0 +1,5 @@
+2025-02-12 23:18:17,973 - logger name:./log/foundation/timesfm/pemsbay_speed_24_record.log
+2025-02-12 23:18:28,342 - ******************************
+2025-02-12 23:18:28,342 - Dataset: pemsbay_speed
+2025-02-12 23:18:28,343 - ******************************
+2025-02-13 00:47:36,913 - TimesFM - Long Forecasting		 MAE:& $3.41\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $7.57\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $8.10\textcolor{gray}{\text{\scriptsize±0.00}}$

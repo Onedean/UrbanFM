@@ -1,0 +1,5 @@
+2025-02-12 23:18:17,949 - logger name:./log/foundation/timesfm/taxinyc_inflow_24_record.log
+2025-02-12 23:18:28,438 - ******************************
+2025-02-12 23:18:28,439 - Dataset: taxinyc_inflow
+2025-02-12 23:18:28,439 - ******************************
+2025-02-13 00:22:23,519 - TimesFM - Long Forecasting		 MAE:& $14.44\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $33.44\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $66.83\textcolor{gray}{\text{\scriptsize±0.00}}$

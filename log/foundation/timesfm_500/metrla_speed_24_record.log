@@ -1,0 +1,5 @@
+2025-02-12 23:18:17,945 - logger name:./log/foundation/timesfm/metrla_speed_24_record.log
+2025-02-12 23:18:28,301 - ******************************
+2025-02-12 23:18:28,301 - Dataset: metrla_speed
+2025-02-12 23:18:28,301 - ******************************
+2025-02-13 00:23:12,919 - TimesFM - Long Forecasting		 MAE:& $6.67\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $13.63\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $17.22\textcolor{gray}{\text{\scriptsize±0.00}}$

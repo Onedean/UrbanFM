@@ -1,0 +1,5 @@
+2025-02-12 23:18:18,064 - logger name:./log/foundation/timesfm/tdrive_inflow_24_record.log
+2025-02-12 23:18:28,323 - ******************************
+2025-02-12 23:18:28,323 - Dataset: tdrive_inflow
+2025-02-12 23:18:28,324 - ******************************
+2025-02-13 01:34:59,619 - TimesFM - Long Forecasting		 MAE:& $29.89\textcolor{gray}{\text{\scriptsize±0.00}}$		 RMSE:& $61.15\textcolor{gray}{\text{\scriptsize±0.00}}$		 MAPE:& $40.51\textcolor{gray}{\text{\scriptsize±0.00}}$
