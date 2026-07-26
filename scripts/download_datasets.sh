@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ID="Onedean/UrbanFM-datasets"
+REPO_ID="onedean/UrbanFM-datasets"
 LOCAL_DIR="$(cd "$(dirname "$0")/.." && pwd)/datasets"
 
 echo "Downloading UrbanFM datasets from ${REPO_ID} ..."
